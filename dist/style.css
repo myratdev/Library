@@ -1,0 +1,30 @@
+.addBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+html,
+body {
+  font-family: "Poppins", serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addBook {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}/*# sourceMappingURL=style.css.map */

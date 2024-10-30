@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/normalize.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Library</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="label">Library</div>
+        <div class="stats">
+          <div class="stats__total-books">
+            Total books:
+            <span>34</span>
+          </div>
+          <div class="stats__read">
+            Read:
+            <span>34</span>
+          </div>
+          <div class="stats__not-read">
+            To read:
+            <span>56</span>
+          </div>
+          <div class="stats__total-pages">
+            Total pages:
+            <span>788</span>
+          </div>
+        </div>
+        <button class="addBook__btn">+Add Book</button>
+      </header>
+      <main class="main">
+        <div class="card">
+          <div class="card__title">Harry Potter</div>
+          <div class="card__author">J.K. Rowling</div>
+          <div class="card__pages">546</div>
+          <label for="card__status">Status: </label>
+          <select name="card__status" id="status">
+            <option value="read">Read</option>
+            <option value="wantToRead"> Want to read</option>
+
+          </select>
+          <button class="btn__remove">Remove</button>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="github">Made by myratdev</div>
+      </footer>
+      <div class="form__addBook">
+        <form action method>
+          <div class="form__text">Add book</div>
+          <label for="form__title"></label>
+          <input type="text" id="title" name="form__title" required />
+
+          <label for="form__author"></label>
+          <input type="text" id="author" name="form__author" required />
+
+          <label for="form__pages"></label>
+          <input type="text" id="pages" name="form__pages" required />
+
+          <label for="form__status"> Have you read it? </label>
+          <input type="checkbox" name="form__status" id="status" />
+          <button class="form__add-btn">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

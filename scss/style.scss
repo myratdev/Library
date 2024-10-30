@@ -1,0 +1,42 @@
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+html,
+body {
+  font-family: "Poppins", serif;
+}
+
+// WRAPPER ALL
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+// HEADER
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+// MAIN
+
+// FOOTER
+
+// ADD BOOK MODULE
+.addBook {
+  visibility: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @extend %flex-column;
+}
