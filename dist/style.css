@@ -1,4 +1,4 @@
-.addBook {
+.form__addBook {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -10,19 +10,20 @@ body {
   font-family: "Poppins", serif;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 32px 16px;
+}
+.header__label {
+  font-size: 32px;
+}
+.header .stats {
+  display: flex;
+  gap: 32px;
 }
 
-.addBook {
+.form__addBook {
   visibility: hidden;
   position: absolute;
   top: 50%;

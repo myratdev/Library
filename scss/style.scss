@@ -13,25 +13,38 @@ body {
 // WRAPPER ALL
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  
 }
 
 // HEADER
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 32px 16px;
+
+
+  &__label {
+    font-size: 32px;
+
+  }
+
+  .stats {
+    display: flex;
+    gap: 32px;
+  }
 }
+
 
 // MAIN
 
 // FOOTER
 
 // ADD BOOK MODULE
-.addBook {
+.form__addBook {
   visibility: hidden;
 
   position: absolute;
