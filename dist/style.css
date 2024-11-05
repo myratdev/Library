@@ -10,10 +10,19 @@ body {
   font-family: "Poppins", serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 32px 16px;
+  background-color: #B4B4B8;
 }
 .header__label {
   font-size: 32px;
@@ -21,6 +30,50 @@ body {
 .header .stats {
   display: flex;
   gap: 32px;
+}
+
+.main {
+  display: grid;
+  padding: 32px;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 16px;
+  background-color: #C7C8CC;
+}
+.main .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #E3E1D9;
+  padding: 32px;
+}
+.main .card__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.main .card__remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+}
+.main .card select {
+  width: 150px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #C7C8CC;
+}
+.footer .github {
+  padding: 8px;
 }
 
 .form__addBook {

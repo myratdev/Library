@@ -1,3 +1,5 @@
+$read-color : linear-gradient(135deg, #757575, #00c853, #757575);
+$notRead-color: #E3E1D9;
 %flex-column {
   display: flex;
   flex-direction: column;
@@ -13,9 +15,10 @@ body {
 // WRAPPER ALL
 
 .wrapper {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   
 }
 
@@ -24,7 +27,10 @@ body {
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 32px 16px;
+  background-color: #B4B4B8;
+
 
 
   &__label {
@@ -40,8 +46,64 @@ body {
 
 
 // MAIN
+.main {
+  display: grid;
+  padding: 32px;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 16px;
+  background-color: #C7C8CC;
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: max-content;
+    background-color: $notRead-color;
+    // background: $card-read-color;
+    
+    padding: 32px;
+    
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &__remove {
+
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: transparent;
+      border: none;
+    }
+
+    select {
+      width: 150px;
+    }
+  }
+}
 
 // FOOTER
+.footer {
+  display: flex;
+  justify-content: center;
+  // background-color: #F2EFE5;
+  background-color: #C7C8CC;
+ 
+  .github {
+   
+    padding: 8px;
+  }
+}
+
+
+
+
+
 
 // ADD BOOK MODULE
 .form__addBook {
