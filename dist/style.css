@@ -1,18 +1,15 @@
-.form__addBook {
+.wrapper, .main .card, .form__addBook {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
 }
 
 html,
 body {
   font-family: "Poppins", serif;
+  background-color: #798777;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   height: 100vh;
 }
@@ -22,7 +19,9 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 32px 16px;
-  background-color: #B4B4B8;
+  background-color: #99A799;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 8px;
 }
 .header__label {
   font-size: 32px;
@@ -30,6 +29,12 @@ body {
 .header .stats {
   display: flex;
   gap: 32px;
+}
+.header .addBook__btn {
+  border: none;
+  padding: 16px 32px;
+  background-color: #A9907E;
+  border-radius: 8px;
 }
 
 .main {
@@ -39,24 +44,23 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: max-content;
   gap: 16px;
-  background-color: #C7C8CC;
 }
 .main .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 10px;
   height: -moz-max-content;
   height: max-content;
-  background-color: #E3E1D9;
+  background-color: #A9907E;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 7px;
   padding: 32px;
 }
 .main .card__title {
   font-size: 22px;
   font-weight: 600;
 }
-.main .card__remove {
+.main .card__btn-remove {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -70,7 +74,7 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #C7C8CC;
+  font-weight: 500;
 }
 .footer .github {
   padding: 8px;
