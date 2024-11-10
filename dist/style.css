@@ -24,7 +24,8 @@ body {
   margin: 8px;
 }
 .header__label {
-  font-size: 32px;
+  font-size: 36px;
+  font-weight: 900;
 }
 .header .stats {
   display: flex;
@@ -35,6 +36,11 @@ body {
   padding: 16px 32px;
   background-color: #A9907E;
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: ease 0.15s;
+}
+.header .addBook__btn:hover {
+  scale: 105%;
 }
 
 .main {
@@ -47,14 +53,17 @@ body {
 }
 .main .card {
   position: relative;
+  font-weight: 500;
   justify-content: center;
   gap: 10px;
-  height: -moz-max-content;
-  height: max-content;
   background-color: #A9907E;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border-radius: 7px;
+  border-radius: 4px;
   padding: 32px;
+  transition: ease 0.15s;
+}
+.main .card:hover {
+  scale: 103%;
 }
 .main .card__title {
   font-size: 22px;
@@ -67,8 +76,14 @@ body {
   background-color: transparent;
   border: none;
 }
+.main .card__btn-remove:hover {
+  transition: ease-in 0.15s;
+  color: red;
+}
 .main .card select {
-  width: 150px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  text-align: center;
 }
 
 .footer {
