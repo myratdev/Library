@@ -1,4 +1,4 @@
-.wrapper, .main .card, .form__addBook {
+.wrapper, .main .card, .form {
   display: flex;
   flex-direction: column;
 }
@@ -12,6 +12,7 @@ body {
 .wrapper {
   justify-content: space-between;
   height: 100vh;
+  position: relative;
 }
 
 .header {
@@ -22,6 +23,8 @@ body {
   background-color: #99A799;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin: 8px;
+  border-radius: 4px;
+  gap: 20px;
 }
 .header__label {
   font-size: 36px;
@@ -35,12 +38,15 @@ body {
   border: none;
   padding: 16px 32px;
   background-color: #A9907E;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: ease 0.15s;
 }
 .header .addBook__btn:hover {
   scale: 105%;
+}
+.header .addBook__btn:active {
+  scale: 100%;
 }
 
 .main {
@@ -75,9 +81,9 @@ body {
   right: 8px;
   background-color: transparent;
   border: none;
+  transition: ease-in 0.15s;
 }
 .main .card__btn-remove:hover {
-  transition: ease-in 0.15s;
   color: red;
 }
 .main .card select {
@@ -95,9 +101,86 @@ body {
   padding: 8px;
 }
 
-.form__addBook {
+.form__wrapper {
   visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form {
+  align-items: center;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  position: relative;
+  height: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 300px;
+  background-color: #99A799;
+  border-radius: 4px;
+}
+.form__module {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  padding-bottom: 12px;
+}
+.form__module input:not(:last-child) {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.form__module input:not(:last-child):focus-visible {
+  border: none;
+  outline: none;
+}
+.form__text {
+  align-self: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 12px 4px;
+  margin-top: 20px;
+}
+.form__add-btn {
+  align-self: center;
+  padding: 8px 16px;
+  width: 100px;
+  margin-top: 40px;
+  background-color: #A9907E;
+  border: none;
+  border-radius: 4px;
+  transition: ease 0.15s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.form__add-btn:hover {
+  scale: 105%;
+}
+.form__add-btn:active {
+  scale: 100%;
+}
+.form__btn-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  transition: ease 0.15s;
+}
+.form__btn-remove:hover {
+  color: red;
+}
+
+.read__check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.read__check input {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */

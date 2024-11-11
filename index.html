@@ -76,23 +76,28 @@
       <footer class="footer">
         <div class="github">Made by myratdev</div>
       </footer>
-      <div class="form__addBook">
-        <form action method>
-          <div class="form__text">Add book</div>
-          <label for="form__title"></label>
+      <div class="form__wrapper">
+        <div class="form">
+        <form class="form__module" action method>
+          <div class="form__text">Add  book</div>
+          <label for="form__title">Title* </label>
           <input type="text" id="title" name="form__title" required />
 
-          <label for="form__author"></label>
+          <label for="form__author">Author* </label>
           <input type="text" id="author" name="form__author" required />
 
-          <label for="form__pages"></label>
+          <label for="form__pages">Number of pages* </label>
           <input type="text" id="pages" name="form__pages" required />
 
-          <label for="form__status"> Have you read it? </label>
+          <div class="read__check">
+            <label for="form__status"> Have you read it? </label>
           <input type="checkbox" name="form__status" id="status" />
+        </div>
           <button class="form__add-btn">Add</button>
+          <button class="form__btn-remove">✕</button>
         </form>
       </div>
+    </div>
     </div>
 
     <script src="script.js"></script>
